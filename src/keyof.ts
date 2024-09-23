@@ -20,3 +20,13 @@ const userInfos: PersonInfo = {
 const updatedUserInfos = updatePersonInfo(userInfos, "email", "bbb12345@gmail.com");
 
 console.log(updatedUserInfos);
+
+// 만약 제네릭이 없었다면?
+/*
+function updatePersonInfo(obj: PersonInfo, key: "id" | "name" | "email", value: PersonInfo["id"] | PersonInfo["name"] | PersonInfo["email"]): PersonInfo {
+    return {
+        ...obj,
+        [key]: value
+    }
+}
+*/
