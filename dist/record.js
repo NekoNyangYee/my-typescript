@@ -1,3 +1,4 @@
+"use strict";
 // 제네릭 타입변수 이용해서 과일 콘솔에 찍기
 function printFruitInfo(fruit, info) {
     console.log("Fruit: ".concat(fruit, ", Color: ").concat(info.color, ", Taste: ").concat(info.taste));

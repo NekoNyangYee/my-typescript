@@ -1,3 +1,4 @@
+"use strict";
 function createUser(user) {
     console.log(user.name);
     console.log(user.age, user.email, user.description);

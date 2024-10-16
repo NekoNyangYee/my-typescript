@@ -1,3 +1,4 @@
+"use strict";
 var user01 = {
     name: 'thkim',
     email: 'kk0812@naver.com',

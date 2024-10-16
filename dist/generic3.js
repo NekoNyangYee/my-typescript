@@ -8,5 +8,5 @@ function convertFunction(data, input) {
     return data.convert(input);
 }
 var json = '{"name": "Jhon", "age": 25}';
-var parsedData = convertFunction(parseData, json);
-console.log(parsedData);
+var parsingData = convertFunction(parseData, json);
+console.log(parsingData);

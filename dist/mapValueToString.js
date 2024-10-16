@@ -1,3 +1,4 @@
+"use strict";
 function convertValue(obj) {
     var result = {};
     for (var key in obj) {

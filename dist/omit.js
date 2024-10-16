@@ -1,3 +1,4 @@
+"use strict";
 var userExtends = {
     email: 'a@kakao.com',
     description: 'hello'
