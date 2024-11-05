@@ -31,16 +31,7 @@ fs.readdir(directoryPath, (err, files) => {
             console.log(`File "${targetFile}" not found in ${directoryPath}`);
         }
     } else {
-        // 인자가 없으면 모든 파일 실행
-        jsFiles.forEach(file => {
-            exec(`node ${path.join(directoryPath, file)}`, (err, stdout, stderr) => {
-                if (err) {
-                    console.error(`Error executing ${file}:`, err);
-                    return;
-                }
-                if (stderr) console.error(stderr);
-                console.log(stdout);
-            });
-        });
+        // 인자가 없으면 입력하고 싶은 파일 실행하라는 경고 문구 띄움
+        console.log('Please specify a file to run.');
     }
 });
