@@ -2,7 +2,6 @@ interface Person7 {
   name: string;
   age: number;
   email: string;
-  isAdmin: boolean;
 }
 
 type NestKeys<T> = {
@@ -11,7 +10,7 @@ type NestKeys<T> = {
   }
 }
 
-type NestedPerson = NestKeys<Person>;
+type NestedPerson = NestKeys<Person7>;
 
 const nested: NestedPerson = {
   name: { name: "Alice" },
