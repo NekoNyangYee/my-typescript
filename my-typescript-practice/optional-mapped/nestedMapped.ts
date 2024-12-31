@@ -11,12 +11,13 @@ type NestKeys<T> = {
   }
 }
 
-type NestedPerson = NestKeys<Person>;
+type NestedPerson = NestKeys<Person7>;
 
 const nested: NestedPerson = {
   name: { name: "Alice" },
   age: { age: 30 },
   email: { email: "alice@example.com" },
+  isAdmin: { isAdmin: true },
 };
 
 console.log(nested);
