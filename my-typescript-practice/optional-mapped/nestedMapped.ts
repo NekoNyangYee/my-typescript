@@ -2,7 +2,6 @@ interface Person7 {
   name: string;
   age: number;
   email: string;
-  isAdmin: boolean;
 }
 
 type NestKeys<T> = {
