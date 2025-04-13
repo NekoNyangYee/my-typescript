@@ -2,9 +2,10 @@ function pluck<T, K extends keyof T>(array: Array<T>, key: K): T[K][] {
     const result: T[K][] = [];
     for (const item of array) {
         result.push(item[key]);
-        return result;
     }
+    return result;
 }
+
 
 const people = [
     { name: 'Alice', age: 25 },
